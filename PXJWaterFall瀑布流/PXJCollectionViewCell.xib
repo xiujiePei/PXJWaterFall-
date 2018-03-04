@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2336" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PXJCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="87" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="87" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fbx-21-ju9">
+                        <rect key="frame" x="0.0" y="0.0" width="87" height="130"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcU-1h-tvW">
+                        <rect key="frame" x="0.0" y="130" width="87" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" identifier="labelConstraintsHeight" id="m5m-fM-rdE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PcU-1h-tvW" secondAttribute="bottom" id="5Io-XF-ZK6"/>
+                <constraint firstItem="Fbx-21-ju9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6ol-Rt-aTY"/>
+                <constraint firstItem="Fbx-21-ju9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B6e-Bm-Agb"/>
+                <constraint firstItem="PcU-1h-tvW" firstAttribute="top" secondItem="Fbx-21-ju9" secondAttribute="bottom" id="Luy-uS-ZgY"/>
+                <constraint firstAttribute="trailing" secondItem="PcU-1h-tvW" secondAttribute="trailing" id="akK-SY-CcS"/>
+                <constraint firstAttribute="trailing" secondItem="Fbx-21-ju9" secondAttribute="trailing" id="qYy-6i-1rc"/>
+                <constraint firstItem="PcU-1h-tvW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vKN-v5-Pi4"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="Fbx-21-ju9" id="62c-Li-iab"/>
+                <outlet property="label" destination="PcU-1h-tvW" id="edH-hO-9jT"/>
+                <outlet property="labelConstraintsHeight" destination="m5m-fM-rdE" id="Wpl-gD-NJf"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
